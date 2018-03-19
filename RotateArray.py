@@ -1,0 +1,1 @@
+def rotate(nums, k):    """    :type nums: List[int]    :type k: int    :rtype: void Do not return anything, modify nums in-place instead.    """    lenth = len(nums)    k = k % lenth    nums = nums[lenth - k:lenth] + nums[0:lenth - k]    print(nums)print(rotate([1, 2], 1))

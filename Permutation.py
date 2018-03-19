@@ -1,0 +1,1 @@
+def permute(nums):    """    :type nums: List[int]    :rtype: List[List[int]]    """    print(nums)    res = []    if len(nums) == 1: return [nums]    for i in nums:        nextnums = nums[:]        nextnums.remove(i)        for j in permute(nextnums):            res.append([i] + j)    return resprint(permute([1, 2, 3]))
