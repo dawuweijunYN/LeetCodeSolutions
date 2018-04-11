@@ -1,0 +1,1 @@
+grid=[[0,2],[1,3],[2,1]]print(list(map(print,*grid)))
